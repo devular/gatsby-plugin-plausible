@@ -42,7 +42,7 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
     const scriptProps = {
       async: true,
       defer: true,
-      domain: domain,
+      'data-domain': domain,
       src: proxyScript || `https://${plausibleDomain}${scriptURI}`,
     };
     if (trackAcquisition) {
